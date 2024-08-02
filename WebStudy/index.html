@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Button Column</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script type="text/javascript" src="JS/main.js"></script>
+</head>
+<body>
+    <h1>Simple calculator</h1>
+    <p>By VSC</p>
+    <div class="calculator">
+        <div class="display-container">
+            <input type="text" id="displayStore" readonly>
+            <br />
+            <input type="text" id="display" readonly>
+        </div>
+        <div class="button-container">
+            <button onclick="Action('+')" type="button">+</button>
+            <button onclick="Action('-')" type="button">-</button>
+            <button onclick="Action('*')" type="button">*</button>
+            <button onclick="Action('/')" type="button">/</button>
+            <button onclick="Number(1)" type="button">1</button>
+            <button onclick="Number(2)" type="button">2</button>
+            <button onclick="Number(3)" type="button">3</button>
+            <button onclick="Number(0)" type="button">0</button>
+            <button onclick="Number(4)" type="button">4</button>
+            <button onclick="Number(5)" type="button">5</button>
+            <button onclick="Number(6)" type="button">6</button>
+            <button onclick="Action('C')" type="button">C</button>
+            <button onclick="Number(7)" type="button">7</button>
+            <button onclick="Number(8)" type="button">8</button>
+            <button onclick="Number(9)" type="button">9</button>
+            <button onclick="Action('CE')" type="button">CE</button>
+            <button onclick="Action('=')" type="button" class="last">=</button>
+        </div>
+    </div>
+</body>
+</html>

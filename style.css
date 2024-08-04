@@ -1,4 +1,4 @@
-﻿body {
+body {
     font-family: Arial;
     font-size: 30px;
     color:aquamarine;
@@ -69,4 +69,80 @@ p {
 
 .button-container button:hover {
     /*background-color: #d0d0d0;*/
+}
+
+@media only screen and (max-width: 1080px) {
+    body {
+        font-family: Arial;
+        font-size: 60px;
+        color: aquamarine;
+        text-align: center;
+    }
+
+    h1 {
+        color: black;
+    }
+
+    p {
+        font-family: Arial;
+        font-size: 36px;
+        color: black;
+    }
+
+    .calculator {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #displayStore {
+        width: 70%;
+        height: 60px;
+        margin-bottom: 5px;
+        font-size: 50px;
+        text-align: right;
+        padding-right: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    #display {
+        width: 70%;
+        height: 60px;
+        margin-bottom: 20px;
+        font-size: 50px;
+        text-align: right;
+        padding-right: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .button-container {
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(4, 160px); /* Increase button width */
+        gap: 20px;
+        justify-content: center;
+    }
+
+        .button-container button {
+            width: 160px; /* Match the width of the grid columns */
+            height: 160px; /* Increase height to make buttons larger */
+            font-size: 48px; /* Increase font size for better readability */
+            /*border: none;*/
+            /*border-radius: 10px;*/ /* Adjust border-radius if needed */
+            /*background-color: #e0e0e0;*/
+            /*cursor: pointer;*/
+            /*transition: background-color 0.3s;*/
+        }
+
+    .last {
+        grid-column-start: 4;
+    }
+
+    .button-container button:hover {
+        /*background-color: #d0d0d0;*/
+    }
+
 }

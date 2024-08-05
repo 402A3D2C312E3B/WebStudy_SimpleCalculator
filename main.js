@@ -1,4 +1,4 @@
-﻿
+
 let storeValue = '';
 let displayValue = '';
 let zeroCheck = 0;
@@ -42,8 +42,8 @@ function Action(inputAction) {
                 break;
         }
 
-        if (storeValue == '' && displayValue != '') {
-            storeValue = storeValue - displayValue;
+        if (storeValue == '' && inputAction == '-') {
+            storeValue = -displayValue;
             displayValue = '';
         }
         else if (storeValue != '' && displayValue != '') {
